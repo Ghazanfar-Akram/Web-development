@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a form for the upcoming Arduino Online Class on 1st April at 10 AM.">
+    <title>Arduino Online Class Registration</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<script src="script.js"></script>
+
+<body>
+    <h2>Arduino Online Class Registration</h2>
+    <p>This is the online form for the upcoming <b>Arduino Webinar</b> on <b>1st April at 10 AM</b>.</p>
+
+    <div class="container">
+        <form action="https://formsubmit.co/ghazanfarakram24@gmail.com" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone">
+
+            <label for="university">University:</label>
+            <input type="text" id="university" name="university" required>
+
+            <label for="course">Course/Degree:</label>
+            <input type="text" id="course" name="course" required>
+
+            <label for="reason">Why do you want to attend this class?</label>
+            <textarea id="reason" name="reason" placeholder="Enter your reason here..." required ></textarea>
+
+            <label>Are you confirmed to join it?</label>
+            <select name="confirmation" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="source">Where did you hear about this class?</label>
+            <select id="source" name="source" required>
+                <option value="Social Media">Social Media</option>
+                <option value="Friends">Friends</option>
+                <option value="Colleagues">Colleagues</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="other_info">Any other information:</label>
+            <textarea id="other_info" name="other_info"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
 
