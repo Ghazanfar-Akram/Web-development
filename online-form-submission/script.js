@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     form.addEventListener("submit", function (event) {
         let isValid = true;
+        let errors = [];
 
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             errorElement.textContent = message;
             errorElement.style.color = "red";
+            errors.push(message);
         }
 
         document.querySelectorAll(".error-message").forEach(el => el.remove());
@@ -56,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (!isValid) {
+            console.log("Form submission blocked due to errors:", errors);
             event.preventDefault();
         }
     });
