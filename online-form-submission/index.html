@@ -16,7 +16,10 @@
     <p>This is the online form for the upcoming <b>Arduino Webinar</b> on <b>1st April at 10 AM</b>.</p>
 
     <div class="container">
-        <form action="https://formsubmit.co/27e3ab0c609e7ef9e00f6b58d69e4972" method="POST">
+        <form action="https://formspree.io/f/mnnpjygn" method="POST">
+            <input type="hidden" name="_subject" value="New Registration for Arduino Class">
+            <input type="hidden" name="_next" value="https://ghazanfar-akram.github.io/Web-development/online-form-submission/success.html">
+            
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -33,7 +36,7 @@
             <input type="text" id="course" name="course" required>
 
             <label for="reason">Why do you want to attend this class?</label>
-            <textarea id="reason" name="reason" placeholder="Enter your reason here..." required ></textarea>
+            <textarea id="reason" name="reason" placeholder="Enter your reason here..." required></textarea>
 
             <label>Are you confirmed to join it?</label>
             <select name="confirmation" required>
@@ -52,11 +55,8 @@
             <label for="other_info">Any other information:</label>
             <textarea id="other_info" name="other_info"></textarea>
 
-            <input type="text" name="_honey" style="display:none;">
-
             <button type="submit">Submit</button>
         </form>
     </div>
 </body>
 </html>
-
